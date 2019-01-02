@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .nav {
+            text-align: center;
+            display: inline-block;
+            width: 75px;
+            height: 40px;
+            background-color: rgb(97, 97, 97);
+            text-decoration: none;
+            color: white;
+            line-height: 40px;
+        }
+
+        .nav:hover {
+            background-color: red;
+        }
+
+        iframe {
+            display: block;
+            width: 320px;
+        }
+
+        #navbar {
+            width: 324px;
+            background-color: rgb(97, 97, 97);
+        }
+
+        .dropdown {
+            padding-left: 15px;
+            text-align: center;
+            position: relative;
+            display: inline-block;
+            color: white;
+        }
+
+        .dropdown-contenuto {
+            display: none;
+            position: absolute;
+            background-color: rgb(97, 97, 97);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+        }
+
+        .dropdown:hover .dropdown-contenuto {
+            display: block;
+        }
+
+        .link {
+            text-decoration: none;
+            color: white;
+            margin: 10px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="navbar">
+            <a class="nav" href="home.html" target="frame">Home</a>
+            <a class="nav" href="news.html" target="frame">News</a>
+            <div class="dropdown">
+                <span>More</span>
+                <div class="dropdown-contenuto">
+                    <a class="link" href="contacts.html" target="frame">Contacts</a><br>
+                    <a class="link" href="about.html" target="frame">About</a>
+                </div>
+            </div>
+        </div>
+        <iframe src="home.html" name="frame"></iframe>
+    </div>
+
+
+</body>
+
+</html>

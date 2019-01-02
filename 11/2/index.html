@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>esercizio 11.2</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li a {
+            padding: 1px 0px 1px 20px;
+            display: block;
+            width: 75px;
+            height: 40px;
+            background-color: rgb(235, 235, 235);
+            line-height: 40px;
+            text-decoration: none;
+            color: black;
+        }
+
+        li a:hover {
+            background-color: rgb(97, 97, 97);
+            color: white;
+        }
+
+        ul{
+            display:inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <span id="navbar">
+            <ul>
+                <li><a href="home.html" target="frame">Home</a></li>
+                <li><a href="news.html" target="frame">News</a></li>
+                <li><a href="contacts.html" target="frame">Contact</a></li>
+                <li><a href="about.html" target="frame">About</a></li>
+            </ul>
+        </span>
+        <iframe src="home.html" name="frame"></iframe>
+    </div>
+</body>
+
+</html>

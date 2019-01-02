@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>esercizio 11.2</title>
+    <style>
+        a {
+            text-align: center;
+            display: inline-block;
+            width: 75px;
+            height: 40px;
+            background-color: rgb(235, 235, 235);
+            line-height: 40px;
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            background-color: rgb(97, 97, 97);
+            color: white;
+        }
+
+        a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        iframe {
+            display: block;
+            width: 320px;
+        }
+
+        #navbar {
+            width: 324px;
+            background-color: rgb(235, 235, 235);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="navbar">
+            <a href="home.html" class="active" target="frame">Home</a>
+            <a href="news.html" target="frame">News</a>
+            <a href="contacts.html" target="frame">Contact</a>
+        </div>
+        <iframe src="home.html" name="frame"></iframe>
+    </div>
+</body>
+
+</html>
